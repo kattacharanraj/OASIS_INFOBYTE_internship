@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-section {
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.form-section h1 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid black;
+    background-color: lightyellow;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: lightgreen;
+}
+
+.btn-danger {
+    background-color: lightcoral;
+}
+
+.toggle-text {
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+    font-size: 0.95em;
+}
+
+.toggle-text a {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.error-message {
+    color: black;
+    background-color: lightcoral;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.dashboard {
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: lightyellow;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 1.8em;
+    color: black;
+}
+
+.dashboard-content {
+    padding-top: 20px;
+}
+
+.info-section {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section h2 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.6;
+}
+
+.info-box {
+    background-color: lightcyan;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.info-box p {
+    margin-bottom: 10px;
+}
+
+.users-list {
+    list-style: none;
+}
+
+.users-list li {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .form-section h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .info-section h2 {
+        font-size: 1.3em;
+    }
+}

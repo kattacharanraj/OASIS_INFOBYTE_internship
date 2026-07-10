@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="authForms">
+            <div id="loginForm" class="form-section">
+                <h1>🔐 Login</h1>
+                <div class="form-group">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" class="input-field" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" class="input-field" placeholder="Enter password">
+                </div>
+                <button id="loginBtn" class="btn btn-primary">Login</button>
+                <p class="toggle-text">Don't have an account? <a href="#" id="toRegister">Register here</a></p>
+                <p id="loginError" class="error-message"></p>
+            </div>
+
+            <div id="registerForm" class="form-section hidden">
+                <h1>📝 Register</h1>
+                <div class="form-group">
+                    <label for="regUsername">Username:</label>
+                    <input type="text" id="regUsername" class="input-field" placeholder="Choose a username">
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" class="input-field" placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword">Confirm Password:</label>
+                    <input type="password" id="regConfirmPassword" class="input-field" placeholder="Confirm password">
+                </div>
+                <button id="registerBtn" class="btn btn-primary">Register</button>
+                <p class="toggle-text">Already have an account? <a href="#" id="toLogin">Login here</a></p>
+                <p id="regError" class="error-message"></p>
+            </div>
+        </div>
+
+        <div id="dashboard" class="dashboard hidden">
+            <div class="dashboard-header">
+                <h1>Welcome, <span id="userName"></span>! 👋</h1>
+                <button id="logoutBtn" class="btn btn-danger">Logout</button>
+            </div>
+
+            <div class="dashboard-content">
+                <section class="info-section">
+                    <h2>Dashboard</h2>
+                    <p>You are successfully logged in!</p>
+                </section>
+
+                <section class="info-section">
+                    <h2>Account Information</h2>
+                    <div class="info-box">
+                        <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+                        <p><strong>Login Time:</strong> <span id="loginTime"></span></p>
+                    </div>
+                </section>
+
+                <section class="info-section">
+                    <h2>Registered Users</h2>
+                    <ul id="usersList" class="users-list"></ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
