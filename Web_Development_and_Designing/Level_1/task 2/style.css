@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid black;
+}
+
+.header {
+    background: lightblue;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.profile-pic {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.header p {
+    font-size: 1em;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.section h2 {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    color: black;
+    font-size: 1em;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skill-item {
+    background: lightyellow;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+.skill-item h3 {
+    color: black;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.skill-item p {
+    color: black;
+    font-size: 0.9em;
+}
+
+.contact-info {
+    background: lightgray;
+    padding: 15px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item label {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.contact-item p {
+    color: black;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-pic {
+        font-size: 50px;
+    }
+}
